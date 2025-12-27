@@ -73,7 +73,7 @@ class Designer extends BaseUIClass {
                 options={this.getOptions()}
             >
                 <DesignerComponent
-                    scrollOnUpdateTemplate={scrollOnUpdateTemplate}
+                    scrollOnUpdateTemplate={this.scrollOnUpdateTemplate}
                     template={this.template}
                     onSaveTemplate={(template) => {
                         this.template = template;

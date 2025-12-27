@@ -28,6 +28,7 @@ test('Designer snapshot', async () => {
           <PluginsRegistry.Provider value={pluginRegistry(plugins)}>
             <Designer
               template={getSampleTemplate()}
+              scrollOnUpdateTemplate={true}
               onSaveTemplate={console.log}
               onChangeTemplate={console.log}
               size={{ width: 1200, height: 1200 }}
@@ -37,7 +38,7 @@ test('Designer snapshot', async () => {
             />
           </PluginsRegistry.Provider>
         </FontContext.Provider>
-      </I18nContext.Provider>
+      </I18nContext.Provider>,
     );
     container = c;
   });
